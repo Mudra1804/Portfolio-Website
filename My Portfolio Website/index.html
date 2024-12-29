@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <!-- <li class="name-nav">Mudra Mujumdar</li> -->
+        <div>
+            <a href="javascript:void(0)" onclick="updateContent('home')"><li>Home</li></a>
+            <a href="javascript:void(0)" onclick="updateContent('about')"><li>About</li></a>
+            <a href="#skills" ><li>Skills</li></a>
+            <a href="#projects" ><li>Projects</li></a>
+            <a href="#contact" ><li>Contact Me</li></a>
+            
+        </div>
+      </div>
+    </header>
+    <div class="mainSec">
+      <div class="image-container">
+        <img src="./images/bg.jpeg" alt="image">
+      </div>
+      <div class="description" id="dynamicContent">
+        <h3>Hi, I am Mudra Mujumdar...</h3>
+        <p>
+          I am a passionate developer with expertise in web development. I love building clean and visually appealing websites and exploring new technologies. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </p>
+        <a href="./assets/Mudra_Mujumdar.pdf" class="btn btn-primary" download>
+            Download Resume
+        </a>
+          
+      </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <div class="container my-5">
+  <div class="row">
+    <center><h1>Skills</h1></center>
+    <!-- Card 1: Skills -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <!-- Progress Bar for C -->
+          <h6>C</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+
+          <!-- Progress Bar for C++ -->
+          <h6>C++</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+
+          <!-- Progress Bar for HTML -->
+          <h6>HTML</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+
+          <!-- Progress Bar for CSS -->
+          <h6>CSS</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+
+          <!-- Progress Bar for Bootstrap -->
+          <h6>Bootstrap</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+          </div>
+
+          <!-- Progress Bar for JS -->
+          <h6>JavaScript</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Skills -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <!-- Progress Bar for jQuery -->
+          <h6>jQuery</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+
+          <!-- Progress Bar for React JS -->
+          <h6>React JS</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
+
+          <!-- Progress Bar for Python Basics -->
+          <h6>Basics of Python</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+          </div>
+
+          <!-- Progress Bar for Django -->
+          <h6>Django</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
+
+          <!-- Progress Bar for SQL -->
+          <h6>SQL</h6>
+          <div class="progress mb-3">
+            <div class="progress-bar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    
+    <div class="container projects-section my-5" id="projects">
+        <h1 class="text-center mb-4">Projects</h1>
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card shadow rounded">
+              <a href="javascript:void(0);" onclick="confirmRedirect('https://github.com/Mudra1804/Amazon-Clone')">
+                <img src="./images/clone.jpeg" class="card-img-top img-fluid rounded-top" alt="Amazon Clone">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">Amazon Clone</h5>
+                <p class="card-text">
+                  A responsive Amazon Clone built using HTML and CSS. Explore its clean design and features.
+                </p>
+                <a href="https://github.com/Mudra1804/Amazon-Clone" target="_blank" class="btn btn-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card shadow rounded">
+              <a href="javascript:void(0);" onclick="confirmRedirect('https://github.com/Mudra1804/Mode-Changing-Calculator')">
+                <img src="./images/calc.png" class="card-img-top img-fluid rounded-top" alt="Mode Changing Calculator">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">Mode Changing Calculator</h5>
+                <p class="card-text">
+                  A dynamic calculator with multiple modes built using HTML, CSS, and JavaScript.
+                </p>
+                <a href="https://github.com/Mudra1804/Mode-Changing-Calculator" target="_blank" class="btn btn-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card shadow rounded">
+              <a href="javascript:void(0);" onclick="confirmRedirect('https://github.com/Mudra1804/To-Do-List')">
+                <img src="./images/todo.jpeg" class="card-img-top img-fluid rounded-top" alt="To-Do List">
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">To-Do List</h5>
+                <p class="card-text">
+                  An interactive to-do list application with intuitive UI, built using HTML, CSS, and JavaScript.
+                </p>
+                <a href="https://github.com/Mudra1804/To-Do-List" target="_blank" class="btn btn-primary">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-details" id="contact">
+            <h1 class="contact-heading">Contact Me</h1>
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> +91-8975954280</span>
+                <span><i class="fas fa-envelope"></i> mudu0403@gmail.com</span>
+                <span>
+                    <a href="https://github.com/Mudra1804" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </span>
+                <span>
+                    <a href="https://www.linkedin.com/in/mudra-mujumdar-996896234/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <footer>
+            <center><h3 style="font-size: 15px;">&copy 2024 Mudra Mujumdar</h3></center>
+        </footer>
+      </div>
+    <script src="./script.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,323 @@
+/* General Styles */
+* {
+    background-color: rgb(0, 0, 33);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white; /* Ensures text is always white */
+}
+html {
+    scroll-behavior: smooth;
+  }
+/* Navbar Styles */
+.name-nav {
+    padding: 0px;
+    margin-right: auto;
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 33);
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.navbar a {
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a li {
+    display: inline-block;
+    
+}
+
+/* Main Section */
+.mainSec {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    height: 100%;
+
+}
+
+.image-container {
+    background: radial-gradient(circle, rgba(255, 0, 150, 0.7), rgba(0, 0, 255, 0.3));
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 30px; /* Adds spacing between the image and text */
+    flex-shrink: 0; /* Prevents the image from resizing in flexbox */
+    margin-top: 50px;
+}
+
+.image-container img {
+    border-radius: 50%;
+    height: 360px;
+    width: 360px;
+    object-fit: cover;
+}
+
+.description {
+    max-width: 60%;
+}
+
+.description h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.description p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.description{
+    max-width: 60%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+}
+
+.description.visible{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+
+.skills {
+    background-color: #0a0a2a; /* Make sure the background is dark */
+    padding: 50px 20px;
+    /* visibility: hidden; /* Initially hidden */
+    /* opacity: 1; */
+    /* transition: visibility 0s, opacity 0.5s ease;  */
+}
+
+/* Show the skills section when scrolled into view */
+/* .skills.visible {
+    visibility: visible;
+    opacity: 0;
+} */
+
+/* Card Styling */
+.card {
+    background-color: #1a1a2e; /* Dark background for the cards */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Progress Bars */
+.progress {
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .skills .row {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* General Styles for the Projects Section */
+.projects-section {
+    padding: 40px 20px;
+    background-color: #0a0a2a; /* Darker background to match the theme */
+    border-radius: 10px;
+    color: white; /* Ensure text is visible on dark background */
+    margin: 0 auto; /* Center the content */
+    width: 100%; /* Ensure full width usage */
+    max-width: 100%; /* Prevent content overflow */
+    box-sizing: border-box;
+}
+
+/* Updated Card Styles */
+.projects-section .card {
+    background-color: #1a1a2e; /* Match the card color with dark theme */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.projects-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Slightly enhanced shadow on hover */
+}
+
+/* Updated Card Image Styles */
+.projects-section .card-img-top {
+    height: 200px; 
+    width: 80%;
+    object-fit: cover; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 30px;
+}
+
+/* Updated Card Body Styles */
+.projects-section .card-body {
+    padding: 20px;
+    text-align: center;
+    color: white; /* Ensure text is readable on dark cards */
+}
+
+.projects-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.projects-section .card-text {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Updated Button Styles */
+.projects-section .btn-primary {
+    background-color: #4caf50; /* Green button for better contrast */
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.projects-section .btn-primary:hover {
+    background-color: #43a047; /* Slightly darker green on hover */
+    transform: translateY(-2px);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .projects-section .card-img-top {
+        height: 150px; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .projects-section .card-title {
+        font-size: 1.1rem;
+    }
+
+    .projects-section .card-text {
+        font-size: 0.85rem;
+    }
+
+    .projects-section .btn-primary {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Contact Details Section */
+.contact-details {
+    text-align: center; /* Center-align all elements */
+    margin: 40px 0;
+}
+
+.contact-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 20px; /* Space between items */
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+
+.contact-info i {
+    color: #007bff; /* Blue icons */
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.contact-info i:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.contact-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+.contact-details i:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.contact-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+ 
